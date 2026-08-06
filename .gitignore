@@ -9,3 +9,6 @@ src/.vscode/
 
 # vendored SDK build artifacts
 src/YDLidar_SDK_jazzy/build/
+
+# Claude Code local settings
+src/.claude/
