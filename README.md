@@ -269,6 +269,17 @@ pip install --break-system-packages \
 rosdep update
 rosdep install --from-paths src --ignore-src -r -y
 
+# Build & install the YDLidar SDK (required by ydlidar_ros2_driver, install system-wide first)
+cd ~/tbot_2M_ws/src/YDLidar_SDK_jazzy
+rm -rf build
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+
+cd ~/tbot_2M_ws
+
 # Build
 colcon build
 
