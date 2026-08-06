@@ -256,10 +256,8 @@ source ~/.bashrc
 
 ```bash
 mkdir -p ~/tbot_2M_ws/src
-cd ~/tbot_2M_ws
-git clone <your-repo-url> src_tmp && shopt -s dotglob && mv src_tmp/* src/ && rm -rf src_tmp
-# (or, if this repo already contains the src/ layout at its root:)
-# git clone <your-repo-url> .
+cd ~/tbot_2M_ws/src
+# git clone https://github.com/MyEqTeamTechno/myeq_TBot.git .
 
 cd ~/tbot_2M_ws
 
@@ -272,7 +270,7 @@ rosdep update
 rosdep install --from-paths src --ignore-src -r -y
 
 # Build
-colcon build --symlink-install
+colcon build
 
 # Source the workspace (add to ~/.bashrc for persistence)
 echo "source ~/tbot_2M_ws/install/setup.bash" >> ~/.bashrc
