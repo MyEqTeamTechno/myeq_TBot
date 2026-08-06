@@ -1,0 +1,139 @@
+techteam@T02:~/tbot_ws$ ros2 launch tbot_bringup laptop_brain.launch.py 
+[INFO] [launch]: All log files can be found below /home/techteam/.ros/log/2026-06-23-15-40-32-728293-T02-33612
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [cartographer_node-1]: process started with pid [33615]
+[INFO] [cartographer_occupancy_grid_node-2]: process started with pid [33616]
+[INFO] [map_server-3]: process started with pid [33617]
+[INFO] [amcl-4]: process started with pid [33618]
+[INFO] [lifecycle_manager-5]: process started with pid [33619]
+[INFO] [controller_server-6]: process started with pid [33620]
+[INFO] [smoother_server-7]: process started with pid [33621]
+[INFO] [planner_server-8]: process started with pid [33622]
+[INFO] [route_server-9]: process started with pid [33623]
+[INFO] [behavior_server-10]: process started with pid [33624]
+[INFO] [bt_navigator-11]: process started with pid [33625]
+[INFO] [waypoint_follower-12]: process started with pid [33626]
+[INFO] [velocity_smoother-13]: process started with pid [33627]
+[INFO] [collision_monitor-14]: process started with pid [33628]
+[INFO] [opennav_docking-15]: process started with pid [33629]
+[INFO] [lifecycle_manager-16]: process started with pid [33630]
+[INFO] [rviz2-17]: process started with pid [33631]
+[lifecycle_manager-5] [INFO] [1782209433.129964759] [lifecycle_manager_localization]: Creating
+[amcl-4] [INFO] [1782209433.136555365] [amcl]: 
+[amcl-4] 	amcl lifecycle node launched. 
+[amcl-4] 	Waiting on external lifecycle transitions to activate
+[amcl-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-16] [INFO] [1782209433.140286431] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-5] [INFO] [1782209433.140939219] [lifecycle_manager_localization]: Creating and initializing lifecycle service clients
+[amcl-4] [INFO] [1782209433.142672311] [amcl]: Creating
+[collision_monitor-14] terminate called after throwing an instance of 'rclcpp::exceptions::InvalidParameterValueException'
+[collision_monitor-14]   what():  parameter_value_from failed for parameter 'observation_sources': No parameter value set
+[map_server-3] [INFO] [1782209433.159916704] [map_server]: 
+[map_server-3] 	map_server lifecycle node launched. 
+[map_server-3] 	Waiting on external lifecycle transitions to activate
+[map_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-3] [INFO] [1782209433.160033515] [map_server]: Creating
+[lifecycle_manager-5] [INFO] [1782209433.164236330] [lifecycle_manager_localization]: Starting managed nodes bringup...
+[lifecycle_manager-5] [INFO] [1782209433.164279213] [lifecycle_manager_localization]: Configuring map_server
+[lifecycle_manager-16] [INFO] [1782209433.167017583] [lifecycle_manager_navigation]: Creating and initializing lifecycle service clients
+[velocity_smoother-13] [INFO] [1782209433.169061235] [velocity_smoother]: 
+[velocity_smoother-13] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-13] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-12] [INFO] [1782209433.175487272] [waypoint_follower]: 
+[waypoint_follower-12] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-12] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-12] [INFO] [1782209433.176885375] [waypoint_follower]: Creating
+[cartographer_node-1] [INFO] [1782209433.199585204] [cartographer logger]: I20260623 15:40:33.-2147483648 33615 configuration_file_resolver.cc:41] Found '/home/techteam/tbot_ws/install/tbot_slam/share/tbot_slam/config/mapping.lua' for 'mapping.lua'.
+[cartographer_node-1] [INFO] [1782209433.200619475] [cartographer logger]: I20260623 15:40:33.-2147483648 33615 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[cartographer_node-1] [INFO] [1782209433.200673549] [cartographer logger]: I20260623 15:40:33.-2147483648 33615 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[cartographer_node-1] [INFO] [1782209433.200741364] [cartographer logger]: I20260623 15:40:33.-2147483648 33615 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[cartographer_node-1] [INFO] [1782209433.200780147] [cartographer logger]: I20260623 15:40:33.-2147483648 33615 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[planner_server-8] [INFO] [1782209433.202537841] [planner_server]: 
+[planner_server-8] 	planner_server lifecycle node launched. 
+[planner_server-8] 	Waiting on external lifecycle transitions to activate
+[planner_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[cartographer_node-1] [INFO] [1782209433.203119394] [cartographer logger]: I20260623 15:40:33.-2147483648 33615 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[cartographer_node-1] [INFO] [1782209433.203176075] [cartographer logger]: I20260623 15:40:33.-2147483648 33615 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[cartographer_node-1] [INFO] [1782209433.203257264] [cartographer logger]: I20260623 15:40:33.-2147483648 33615 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[cartographer_node-1] [INFO] [1782209433.203302824] [cartographer logger]: I20260623 15:40:33.-2147483648 33615 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[cartographer_node-1] [INFO] [1782209433.204009742] [cartographer logger]: I20260623 15:40:33.-2147483648 33615 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[cartographer_node-1] [INFO] [1782209433.204060091] [cartographer logger]: I20260623 15:40:33.-2147483648 33615 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[smoother_server-7] [INFO] [1782209433.203561142] [smoother_server]: 
+[smoother_server-7] 	smoother_server lifecycle node launched. 
+[smoother_server-7] 	Waiting on external lifecycle transitions to activate
+[smoother_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-7] [INFO] [1782209433.206875333] [smoother_server]: Creating smoother server
+[planner_server-8] [INFO] [1782209433.213196601] [planner_server]: Creating
+[controller_server-6] [INFO] [1782209433.233768510] [controller_server]: 
+[controller_server-6] 	controller_server lifecycle node launched. 
+[controller_server-6] 	Waiting on external lifecycle transitions to activate
+[controller_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-6] [INFO] [1782209433.245948995] [controller_server]: Creating controller server
+[behavior_server-10] [INFO] [1782209433.252096300] [behavior_server]: 
+[behavior_server-10] 	behavior_server lifecycle node launched. 
+[behavior_server-10] 	Waiting on external lifecycle transitions to activate
+[behavior_server-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[cartographer_node-1] [INFO] [1782209433.257180591] [cartographer logger]: I20260623 15:40:33.-2147483648 33615 map_builder_bridge.cpp:136] Added trajectory with ID '0'.
+[bt_navigator-11] [INFO] [1782209433.258907923] [bt_navigator]: 
+[bt_navigator-11] 	bt_navigator lifecycle node launched. 
+[bt_navigator-11] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-8] [INFO] [1782209433.262495216] [global_costmap.global_costmap]: 
+[planner_server-8] 	global_costmap lifecycle node launched. 
+[planner_server-8] 	Waiting on external lifecycle transitions to activate
+[planner_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-11] [INFO] [1782209433.263361216] [bt_navigator]: Creating
+[planner_server-8] [INFO] [1782209433.265141907] [global_costmap.global_costmap]: Creating Costmap
+[route_server-9] [INFO] [1782209433.269751010] [route_server]: 
+[route_server-9] 	route_server lifecycle node launched. 
+[route_server-9] 	Waiting on external lifecycle transitions to activate
+[route_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[opennav_docking-15] [INFO] [1782209433.275029095] [docking_server]: 
+[opennav_docking-15] 	docking_server lifecycle node launched. 
+[opennav_docking-15] 	Waiting on external lifecycle transitions to activate
+[opennav_docking-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[opennav_docking-15] [INFO] [1782209433.275175160] [docking_server]: Creating docking_server
+[controller_server-6] [INFO] [1782209433.278035953] [local_costmap.local_costmap]: 
+[controller_server-6] 	local_costmap lifecycle node launched. 
+[controller_server-6] 	Waiting on external lifecycle transitions to activate
+[controller_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-6] [INFO] [1782209433.280036099] [local_costmap.local_costmap]: Creating Costmap
+[map_server-3] [INFO] [1782209433.322405368] [map_server]: Configuring
+[map_server-3] [INFO] [1782209433.322458752] [map_io]: Loading yaml file: map.yaml
+[map_server-3] [ERROR] [1782209433.322523461] [map_io]: Failed processing YAML file map.yaml at position (-1:-1) for reason: bad file: map.yaml
+[map_server-3] [ERROR] [1782209433.322571902] [map_server]: Caught exception in callback for transition 10
+[map_server-3] [ERROR] [1782209433.322584341] [map_server]: Original error: Failed to load map yaml file: map.yaml
+[map_server-3] [WARN] [1782209433.322596631] [map_server]: Callback returned ERROR during the transition: configure
+[map_server-3] [FATAL] [1782209433.322603762] [map_server]: Lifecycle node map_server does not have error state implemented
+[lifecycle_manager-5] [ERROR] [1782209433.323059183] [lifecycle_manager_localization]: Failed to change state for node: map_server
+[lifecycle_manager-5] [ERROR] [1782209433.323101312] [lifecycle_manager_localization]: Failed to bring up all requested nodes. Aborting bringup.
+[rviz2-17] [INFO] [1782209433.611126497] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-17] [INFO] [1782209433.611185037] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-17] [INFO] [1782209433.635948670] [rviz2]: Stereo is NOT SUPPORTED
+[lifecycle_manager-16] [INFO] [1782209435.389551753] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209437.389784473] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[ERROR] [collision_monitor-14]: process has died [pid 33628, exit code -6, cmd '/opt/ros/jazzy/lib/nav2_collision_monitor/collision_monitor --ros-args --log-level info --ros-args -r __node:=collision_monitor -p use_sim_time:=False --params-file /tmp/launch_params_wewgr2e6 -r /tf:=tf -r /tf_static:=tf_static'].
+[lifecycle_manager-16] [INFO] [1782209439.389996740] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209441.390140146] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209443.390339311] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209445.390497129] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209447.390631639] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209449.390824816] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209451.390987110] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209453.391115103] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209455.391243027] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209457.391356078] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209459.391489977] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209461.391635885] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209463.391782318] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209465.391908551] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209467.392038468] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209469.392249018] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209471.392356142] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209473.392483957] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209475.392609442] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209477.392732794] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+[lifecycle_manager-16] [INFO] [1782209479.393014464] [lifecycle_manager_navigation]: Waiting for service collision_monitor/get_state...
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)

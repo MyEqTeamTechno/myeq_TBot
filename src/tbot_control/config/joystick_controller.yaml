@@ -1,0 +1,84 @@
+# Hiwonder Joystick Config for TortoiseBot
+# Controller: Hiwonder USB gamepad (shipped with xArm)
+#
+# Button index map (verified on this controller):
+#   Button 4 = Y face button  ← was wrong deadman
+#   Button ?  = L1            ← update enable_button once confirmed
+#
+# To find a button index: ros2 topic echo /joy --once  (press the button, note which index = 1)
+# To find an axis index:  ros2 topic echo /joy         (move stick, note which axes[N] changes)
+
+teleop_twist_joy_node:
+  ros__parameters:
+
+    # --- Linear (forward / backward) ---
+    # NOTE: teleop_twist_joy v2.4.8 only supports turbo for linear, not angular
+    axis_linear:
+      x: 1                  # Left stick vertical (push up = forward)
+    scale_linear:
+      x: 0.5                # Normal speed (m/s)
+    scale_linear_turbo:
+      x: 1.2                # Turbo speed (m/s) — hold enable_turbo_button
+
+    # --- Angular (turn left / right) ---
+    axis_angular:
+      yaw: 0                # Left stick horizontal (push left = turn left)
+    scale_angular:
+      yaw: 1.0              # Turn rate (rad/s) — same in normal and turbo
+
+    # --- Deadman / enable buttons ---
+    # TODO: replace enable_button with L1's actual button index once confirmed
+    enable_button: 4        # ← CHANGE THIS to L1's button index
+    enable_turbo_button: 5  # RB — hold instead of enable_button for turbo linear speed
+
+    require_enable_button: true
+
+
+
+
+# Hiwonder Joystick Config for TortoiseBot
+# Controller: Hiwonder USB gamepad (shipped with xArm)
+#
+# Default axis mapping (standard generic HID gamepad layo>
+#   Axis 0 → Left stick X  (left/right → turn)
+#   Axis 1 → Left stick Y  (up/down    → forward/back)
+#   Axis 2 → Left trigger
+#   Axis 3 → Right stick X
+#   Axis 4 → Right stick Y
+#   Axis 5 → Right trigger
+#
+# To verify YOUR controller's axis numbers, run:
+#   ros2 run joy joy_node
+#   ros2 topic echo /joy
+# Then move each stick and watch which axis index changes.
+#
+# SAFETY: You MUST hold the enable_button (LB = button 4)>
+#         Release it to instantly stop the robot.
+
+# teleop_twist_joy_node:
+#   ros__parameters:
+
+#     # --- Linear (forward / backward) ---
+#     axis_linear:
+#       x: 1                  # Left stick vertical (push u>
+#     scale_linear:
+#       x: 0.5                # Normal speed  (m/s)
+#     scale_linear_turbo:
+#       x: 1.0                # Turbo speed   (m/s) — hold >
+
+#     # --- Angular (turn left / right) ---
+#     axis_angular:
+#       yaw: 0                # Left stick horizontal (push>
+#     scale_angular:
+#       yaw: 1.0              # Normal turn rate (rad/s)
+#     scale_angular_turbo:
+#       yaw: 1.5              # Turbo turn rate
+
+#     # --- Deadman / enable buttons ---
+#     enable_button: 4        # LB (left bumper) — hold to >
+#     enable_turbo_button: 5  # RB (right bumper) — hold fo>
+
+#     # --- Topic ---
+#     # Publishes to /cmd_vel by default (matches TortoiseB>
+#     require_enable_button: true # false - to disable deadman switch 
+
