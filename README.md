@@ -257,7 +257,7 @@ source ~/.bashrc
 ```bash
 mkdir -p ~/tbot_2M_ws/src
 cd ~/tbot_2M_ws/src
-# git clone https://github.com/MyEqTeamTechno/myeq_TBot.git .
+git clone https://github.com/MyEqTeamTechno/myeq_TBot.git .
 
 cd ~/tbot_2M_ws
 
