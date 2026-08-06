@@ -1,14 +1,14 @@
-# colcon workspace build artifacts (not part of src)
+# colcon workspace build artifacts
 /build/
 /install/
 /log/
 
 # IDE cache/index files
-src/.vscode/browse.vc.db
-src/.vscode/
+.vscode/browse.vc.db
+.vscode/
 
 # vendored SDK build artifacts
-src/YDLidar_SDK_jazzy/build/
+YDLidar_SDK_jazzy/build/
 
 # Claude Code local settings
-src/.claude/
+.claude/
